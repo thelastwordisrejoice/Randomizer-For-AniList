@@ -1,0 +1,131 @@
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: var(--ctp-mantle);
+  color: var(--ctp-sapphire);
+  margin: 0;
+  padding: 1.5rem 0 1rem 0;
+  width: 100%;
+}
+
+.content-wrap,
+.search-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 85vh;
+  width: 100%;
+
+  margin: 0;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+}
+
+.description {
+  margin: 30px auto;
+  font-size: 16px;
+  color: var(--ctp-subtext0);
+}
+
+input {
+  background-color: var(--ctp-surface2);
+  border: 2px solid var(--ctp-overlay0);
+  outline: none;
+
+  height: 30px;
+  padding: 1em;
+}
+
+input:focus {
+  border: 2px solid var(--ctp-lavender);
+}
+
+form button {
+  width: 35px;
+  height: 30px;
+}
+
+button {
+  background-color: var(--ctp-blue);
+  border: none;
+  border-radius: 10px;
+}
+
+button:active {
+  background-color: var(--ctp-green);
+}
+
+.anime-display {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.anime-display p {
+  color: var(--ctp-subtext1);
+}
+
+.anime-display img {
+  width: 100px;
+  max-height: 140px;
+  align-self: center;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.controls button {
+  margin: 10px auto;
+  height: 30px;
+  min-width: 100px;
+  padding: 0px 10px;
+}
+
+a {
+  color: var(--ctp-blue);
+  text-decoration: none;
+}
+
+.loading p::after {
+  content: '';
+  display: inline-block;
+  width: 1.5em;
+  text-align: left;
+  animation: dots 1.5s steps(4) infinite;
+  color: var(--ctp-mauve);
+}
+
+@keyframes dots {
+  0% {
+    content: '';
+  }
+
+  25% {
+    content: '.';
+  }
+
+  50% {
+    content: '..';
+  }
+
+  75% {
+    content: '...';
+  }
+
+  100% {
+    content: '';
+  }
+}
